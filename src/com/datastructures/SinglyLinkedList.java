@@ -38,11 +38,17 @@ public class SinglyLinkedList<V> {
         return head;
     }
 
-    public void reverseRecursively(){
-
+    public void reverseRecursively() {
+        reverse(head);
     }
 
-    private void reverse(LinkedListNode<V> node){
+    private void reverse(LinkedListNode<V> node) {
+        LinkedListNode<V> curNode = node.getNext();
+        if (curNode != null) {
+            LinkedListNode<V> next = curNode;
+            reverse(next);
+        }
+        System.out.println(node);
 
     }
 
