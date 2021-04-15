@@ -10,7 +10,7 @@ public class MergeSortTest {
         return new Random().ints(size, lowBound, highBound).toArray();
     }
 
-    int[] numbers = getRandomArray(1000,0,1000);
+    int[] numbers = getRandomArray(100000,0,100000);
 
     QuickSort quick = new QuickSort();
     BubbleSort bubble = new BubbleSort();
